@@ -1,21 +1,10 @@
-<AFRAME.registerComponent('showInfo', {
-    schema: {
-        
-    },
-
+AFRAME.registerComponent('school-playground', {
+    /**
+     * Code within this function will be called when everything in <a-scene> is ready and loaded.
+     */
     init: function () {
-      // Do something when component first attached.
-    },
-
-    update: function () {
-      // Do something when component's data is updated.
-    },
-
-    remove: function () {
-      // Do something the component or its entity is detached.
-    },
-
-    tick: function (time, timeDelta) {
-      // Do something on every scene tick or frame.
+      // Add code here!
+      console.log('Welcome, class!');
+      
     }
-});
+  });
