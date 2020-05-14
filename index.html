@@ -1,5 +1,5 @@
-<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<script src="js/aframe-master.min.js"></script>
+<script src="js/aframe-ar-nft.js"></script>
 
 
 <style>
@@ -26,7 +26,7 @@
 <body style="margin : 0px; overflow: hidden;">
     <!-- minimal loader shown until image descriptors are loaded -->
     <div class="arjs-loader">
-      <div>Loading, please wait...</div>
+      <div>Witamy w muzeum Czartoryskich proszę czekać ...</div>
     </div>
     <a-scene
       vr-mode-ui="enabled: false;"
@@ -34,16 +34,70 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
     >
-      <!-- we use cors proxy to avoid cross-origin problems -->
+      
       <a-nft
         type="nft"
-        url="des/01A"
+        url="assets/des/Dama_Gronostaj_marker"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5"
       >
-        <!--<a-box></a-box>-->
+        <a-entity
+        gltf-model='assets/3d/cubeJumping.glb'
+        position='50 0 0'
+        rotation='0 0 0'
+        scale='100 100 100'
+        ></a-entity>
+      </a-nft>
+
+      <a-nft
+        type="nft"
+        url="assets/des/01A"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5"
+      >
+        <a-entity
+        gltf-model='assets/3d/cubeJumping.glb'
+        position='50 0 0'
+        rotation='0 0 0'
+        scale='100 100 100'
+        ></a-entity>
+      </a-nft>
+      
+      <a-nft
+        id="obraz2"
+        type="nft"
+        url="assets/des/02D"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5"
+      >
+        <a-entity
+        gltf-model='assets/3d/cubeJumping.glb'
+        position='50 0 0'
+        rotation='0 0 0'
+        scale='100 100 100'
+        ></a-entity>
+      </a-nft>
+      
+      <a-nft
+        type="nft"
+        url="assets/des/04B"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5"
+      >
+        <a-entity
+        gltf-model='assets/3d/cubeJumping.glb'
+        position='50 0 0'
+        rotation='0 0 0'
+        scale='100 100 100'
+        ></a-entity>
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
